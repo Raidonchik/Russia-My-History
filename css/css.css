@@ -132,7 +132,7 @@ a:visited,
 a:hover,
 /* < !-- ссылка, когда пользователь мыши над ним -- > < !-- Ссылка момент щелчка: -- >  */
 a:active {
-    color: greenyellow;
+    color: rgb(51, 80, 7);
 }
 
 header.header {
