@@ -81,6 +81,81 @@ p {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
   }
+  .menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu li a {
+    color: white;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    height: 35px;
+    position: relative;
+    width: 35px;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-end; /* выравнивание по правому краю */
+    align-items: center;}
+  
+  .menu-btn span {
+    background-color: white;
+    display: block;
+    height: 3px;
+    position:relative;
+    width: 100%;
+    padding: 2px;
+  }
+  
+  .menu-btn span:nth-child(1) {
+    top: 12px;
+  }
+  
+  .menu-btn span:nth-child(2) {
+    top: 18px;
+  }
+  
+  .menu-btn span:nth-child(3) {
+    top: 24px;
+  }
+    .menu {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu li a {
+      color: white;
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      text-align: right;
+    }
+    #My-map{ 
+      margin-left: 600px;
+      max-width: 100%;
+    }
+    .menu li {
+      margin-bottom: 10px;
+    }
+    
+    .menu.active {
+      display: block;
+    }
   .text-p-reviews {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -133,8 +208,49 @@ a:visited,
 a:hover,
 /* < !-- ссылка, когда пользователь мыши над ним -- > < !-- Ссылка момент щелчка: -- >  */
 a:active {
-    color: greenyellow;
+    color: green;
 }
+.dropbtn {
+  background-color: #1abcc8;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #1abcc8;}
+
 
 header.header {
     position: relative;
@@ -429,6 +545,45 @@ div.librarie {
     .about__flex-item {
       margin-right: 0px;
       margin-bottom: 30px;
+    }
+    .menu-btn {
+      height: 30px;
+      width: 30px;
+      .menu-btn span:nth-child(1) {
+        top: 10px;
+        transform: rotate(45deg);
+      }
+      
+      .menu-btn span:nth-child(2) {
+        display: none;
+      }
+      
+      .menu-btn span:nth-child(3) {
+        top: 10px;
+        transform: rotate(-45deg);
+      }
+      
+      .menu {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu li a {
+        color: #333;
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+      }
+      
+      .menu li {
+        margin-bottom: 10px;
+      }
+      
+      .menu.active {
+        display: block;
+      }
     }
     .about__flex-item:last-child {
       margin-bottom: 0;
