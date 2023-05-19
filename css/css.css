@@ -524,6 +524,9 @@ div.librarie {
   .project-p {
     color: var(--gray-color);
   }
+  figure{
+    position:static;
+  }
   button{
     border-radius: 10px;
     border-color: white;
